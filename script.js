@@ -1,7 +1,15 @@
 // slideshow
 let y = 0;
+let x = 0;
 
-const cube = document.querySelector('.cube')
+const cube = document.querySelector('.cube');
+document.querySelector('.top-x-control').addEventListener('click', () => {
+    cube.style.transform = `rotateX(${x = x + 20}deg)`
+})
+
+document.querySelector('.bottom-x-control').addEventListener('click', () => {
+    cube.style.transform = `rotateX(${x = x - 20}deg)`
+})
 
 const playPause = () => {
     setInterval(() => {
