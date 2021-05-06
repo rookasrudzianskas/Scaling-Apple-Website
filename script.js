@@ -1,5 +1,5 @@
 // slideshow
-let y = 0;
+let y = 20;
 let x = 0;
 let z = 0;
 let bool = true;
@@ -43,6 +43,15 @@ const playPause = () => {
 
 playPause();
 
+document.querySelector(".controls").addEventListener('mouseover', () => {
+    bool = false;
+    playPause()
+})
+
+document.querySelector(".controls").addEventListener('mouseout', () => {
+    bool = true;
+    playPause()
+})
 const slideshowDivs = () => {
     for (let i = 1; i <= 5; i++) {
         const div = document.createElement('div')
