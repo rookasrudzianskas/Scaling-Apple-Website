@@ -339,6 +339,12 @@ html {
     align-items: center;
     justify-content: space-around;
 }
+.section-2-heading::before {
+    content: "";
+    width: 130%;
+    height: 30vw;
+    background: linear-gradient(var(--primary-color), var(--white-color));
+}
 
 .section-2-heading {
     font-size: 10rem;
