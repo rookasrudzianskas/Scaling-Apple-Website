@@ -339,29 +339,56 @@ html {
     align-items: center;
     justify-content: space-around;
 }
-.section-2-heading::before {
-    content: "";
-    width: 130%;
-    height: 30vw;
-    background: linear-gradient(var(--primary-color), var(--white-color));
-}
 
 .section-2-heading {
     font-size: 10rem;
     font-weight: 200;
     color: var(--black-color);
+    position: relative;
+    margin-bottom: 5rem;
 }
+.section-2-heading::before {
+    content: "";
+    width: 130%;
+    height: 30vw;
+    background: linear-gradient(var(--primary-color), var(--white-color));
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: skewX(-50deg);
+    transform-origin: left top;
+    z-index: -1;
+    border-radius: 1rem;
+}
+
 
 .iphones {
     height: 60vh;
     width: 50vw;
+    background: linear-gradient(var(--primary-color), var(--white-color));
+    border-radius: .5rem;
 }
+
+
 
 .iphones img {
     width: inherit;
     height: inherit;
     object-fit: contain;
     position: absolute;
+    transition: opacity 3s;
+}
+
+.iphone-img-2 {
+    opacity: 0;
+}
+
+.iphones:hover .iphone-img-1 {
+    opacity: 0;
+}
+
+.iphones:hover .iphone-img-2 {
+    opacity: 1;
 }
 
 .iphone-btns {
