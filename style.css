@@ -444,9 +444,32 @@ html {
     font-weight: 200;
     color: var(--primary-color);
     margin-bottom: 15rem;
+    position: relative;
 }
 
+.section-3-content {
+    width: 80%;
 
+}
+
+.section-3-content {
+    width: inherit;
+    flex-direction: column;
+    perspective: 1000rem;
+}
+
+.loading-wrapper {
+    position: absolute;
+    top: 6%;
+    width: 80%;
+    height: 85%;
+    background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("images/MacBook/macbook-1-desktop.png") center no-repeat;
+    z-index: -1;
+}
+
+.macbook-info {
+    position: absolute;
+}
 
 
 
