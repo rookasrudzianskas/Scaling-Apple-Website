@@ -492,6 +492,11 @@ html {
     flex-direction: column;
 }
 
+.change .loading {
+    opacity: 0;
+    transition: opacity 1s 5s;
+}
+
 
 .loading i {
     font-size: 10rem;
@@ -520,6 +525,11 @@ html {
 .change .progress-bar::after {
     width: 100%;
     transition: width 1s 3s;
+}
+
+.change .macbook-info {
+    opacity: 1;
+    transition:  opacity 1s 6s;
 }
 
 .macbook-info {
