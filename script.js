@@ -90,3 +90,25 @@ const slideshow = () => {
 }
 
 slideshow();
+
+
+// section 3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
