@@ -30,16 +30,16 @@ document.querySelector('.bottom-z-control').addEventListener('click', () => {
     cube.style.transform = `rotateX(${x}deg)rotateY(${y}deg)rotateZ(${z += 20}deg)`
 })
 
-// const playPause = () => {
-//     if(bool) {
-//        interval =  setInterval(() => {
-//             cube.style.transform = `rotateY(${y++}deg)rotateX(${x}deg)rotateZ(${z}deg)`
-//         }, 100)
-//     } else {
-//         clearInterval(interval);
-//     }
-//
-// }
+const playPause = () => {
+    if(bool) {
+       interval =  setInterval(() => {
+            cube.style.transform = `rotateY(${y++}deg)rotateX(${x}deg)rotateZ(${z}deg)`
+        }, 100)
+    } else {
+        clearInterval(interval);
+    }
+
+}
 
 playPause();
 
@@ -94,7 +94,13 @@ slideshow();
 
 // section 3
 
+const section3content = document.querySelector('.section-3-content');
 
+window.addEventListener('scroll', () => {
+    if(window.pageYOffset + window.innerHeight >= section3content.offsetTop + section3content.offsetHeight / 2) {
+        section3content.classList.add('change')
+    }
+})
 
 
 
