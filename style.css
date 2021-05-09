@@ -457,6 +457,20 @@ html {
     flex-direction: column;
     perspective: 1000rem;
 }
+.macbook-img-1 {
+    transform: rotateX(-80deg);
+    transform-origin: bottom;
+}
+
+.change .macbook-img-1 {
+    transform: rotateX(0);
+    transition: transform 3s;
+}
+
+.change .loading-wrapper {
+    opacity: 1;
+    transition: opacity 1s 2s;
+}
 
 .loading-wrapper {
     position: absolute;
@@ -465,6 +479,7 @@ html {
     height: 85%;
     background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("images/MacBook/macbook-1-desktop.png") center no-repeat;
     z-index: -1;
+    opacity: 0;
 }
 
 .loading {
@@ -497,9 +512,14 @@ html {
     position: absolute;
     top: 0;
     left: 0;
-    width: 50%;
+    width: 0;
     height: 100%;
     background-color: white;
+}
+
+.change .progress-bar::after {
+    width: 100%;
+    transition: width 1s 3s;
 }
 
 .macbook-info {
