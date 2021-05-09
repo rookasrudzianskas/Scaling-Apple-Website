@@ -436,6 +436,7 @@ html {
     background-color: var(--black-color);
     flex-direction: column;
     padding: 15rem 0;
+    clip-path: polygon(68% 0, 100% 0, 100% 97%, 38% 100%, 0 100%, 0 3%);
 
 }
 
