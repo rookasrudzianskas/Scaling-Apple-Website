@@ -476,7 +476,7 @@ html {
 .loading-wrapper {
     position: absolute;
     top: 6%;
-    width: 50%;
+    width: 60%;
     height: 85%;
     background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("images/MacBook/macbook-1-desktop.png") center no-repeat;
     z-index: -1;
