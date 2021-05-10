@@ -567,6 +567,17 @@ html {
     cursor: pointer;
 }
 
+.section-4 {
+    height: 140vh;
+    padding: 20vh 0;
+}
+
+.watch-band-img {
+    width: 35rem;
+    height: 35rem;
+    object-fit: contain;
+}
+
 
 
 
