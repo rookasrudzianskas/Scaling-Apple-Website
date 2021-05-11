@@ -5,6 +5,9 @@ let z = 0;
 let bool = true;
 let interval;
 
+
+
+
 const cube = document.querySelector('.cube');
 document.querySelector('.top-x-control').addEventListener('click', () => {
     cube.style.transform = `rotateX(${x = x + 20}deg)rotateY(${y}deg)rotateZ(${z}deg)`
@@ -101,6 +104,14 @@ window.addEventListener('scroll', () => {
         section3content.classList.add('change')
     }
 })
+
+const watchBands = document.querySelector(".watch-bands");
+const watchCases = document.querySelector(".watch-cases");
+
+const watchTopControl = document.querySelector('.watch-top-control')
+const watchRightControl = document.querySelector('.watch-right-control')
+const watchBottomControl = document.querySelector('.watch-bottom-control')
+const watchLeftControl = document.querySelector('.watch-left-control')
 
 
 
