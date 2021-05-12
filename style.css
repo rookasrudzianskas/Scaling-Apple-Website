@@ -698,6 +698,28 @@ html {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    margin-top: 5rem;
+
+}
+
+.airpods-btn {
+    width: 15rem;
+    height: 4rem;
+    background-color: var(--primary-color);
+    margin: 0 2rem;
+    border: none;
+    border-radius: .5rem;
+    color: var(--white-color);
+    cursor: pointer;
+}
+
+.airpods-btn:last-child {
+    background-color: var(--white-color);
+    color: var(--primary-color);
+}
+
+.airpods-img-2 {
+    background-color: var(--primary-color);
 }
 
 
